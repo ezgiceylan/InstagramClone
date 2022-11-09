@@ -1,6 +1,7 @@
 import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Feather from 'react-native-vector-icons/Feather';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
 import Home from '../views/Home/Home';
 import Message from '../views/Message/Message';
 import Notification from '../views/Notification/Notification';

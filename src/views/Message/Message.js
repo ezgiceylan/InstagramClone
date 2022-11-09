@@ -3,6 +3,7 @@ import {Image, ScrollView, Text, View} from 'react-native';
 
 import SearchBar from '../../components/SearchBar/SearchBar';
 import message from '../../storage/message';
+
 import styles from './styles';
 const Message = () => {
   return (

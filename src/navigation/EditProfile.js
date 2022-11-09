@@ -1,8 +1,9 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import ProfilEdit from '../views/ProfileEdit/ProfilEdit';
-import OnboardingScreen from '../views/OnboardingScreen/OnboardingScreen';
+
 import CategoryScreen from '../views/OnboardingScreen/CategoryScreen';
+import OnboardingScreen from '../views/OnboardingScreen/OnboardingScreen';
+import ProfilEdit from '../views/ProfileEdit/ProfilEdit';
 const EditProfile = () => {
   const Stack = createNativeStackNavigator();
   return (
