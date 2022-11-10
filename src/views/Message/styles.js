@@ -1,9 +1,5 @@
 import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
-  body: {
-    flex: 1,
-    backgroundColor: 'black',
-  },
   titleContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -39,5 +35,37 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 13,
+  },
+  back: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  userName: {
+    color: 'white',
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginLeft: 2,
+  },
+  imageUser: {
+    width: 35,
+    height: 35,
+    borderRadius: 100,
+    marginLeft: 15,
+  },
+  topMessage: {
+    flexDirection: 'row',
+  },
+  name: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  messageUser: {
+    fontSize: 14,
+    color: 'white',
+    opacity: 0.7,
+    marginTop: 2,
+    fontWeight: '500',
   },
 });

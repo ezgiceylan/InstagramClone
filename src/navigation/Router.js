@@ -5,6 +5,7 @@ import Login from '../views/Login/Login';
 
 import BottomTab from './BottomTab';
 import EditProfile from './EditProfile';
+import MessageScreen from './MessageScreen';
 const Stack = createNativeStackNavigator();
 
 const Router = () => {
@@ -15,6 +16,7 @@ const Router = () => {
       }}>
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="BottomTab" component={BottomTab} />
+      <Stack.Screen name="MessageScreen" component={MessageScreen} />
       <Stack.Screen name="EditProfile" component={EditProfile} />
     </Stack.Navigator>
   );

@@ -25,21 +25,6 @@ const HomeScreen = () => {
         }}
       />
       <Stack.Screen
-        name="Message"
-        component={Message}
-        options={{
-          headerBackTitle: 'ezgiceylan',
-          headerTitle: '',
-          headerStyle: {
-            backgroundColor: 'black',
-          },
-          headerRight: () => {
-            return <Feather name="edit" size={24} color="white" />;
-          },
-          headerTintColor: 'white',
-        }}
-      />
-      <Stack.Screen
         name="Story"
         component={Story}
         options={{

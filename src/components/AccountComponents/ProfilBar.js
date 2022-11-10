@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   },
   header: {
     color: 'white',
-    fontWeight: '400',
+    fontWeight: 'bold',
     fontSize: 22,
   },
   icon: {

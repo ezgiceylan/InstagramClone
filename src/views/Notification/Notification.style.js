@@ -6,7 +6,6 @@ export default StyleSheet.create({
     marginVertical: 10,
     flexDirection: 'row',
     alignItems: 'center',
-
     justifyContent: 'space-between',
   },
   image: {

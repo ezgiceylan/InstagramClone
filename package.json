@@ -28,6 +28,7 @@
     "react-native-elements": "^3.4.2",
     "react-native-gesture-bottom-sheet": "^1.1.0",
     "react-native-gesture-handler": "^2.8.0",
+    "react-native-gifted-chat": "^1.0.4",
     "react-native-image-crop-picker": "^0.38.1",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-pager-view": "^6.0.1",
