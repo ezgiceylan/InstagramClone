@@ -14,7 +14,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import Container from '../../components/Container/Container';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import store from '../../storage/store';
+import store from '../../storage/database/store';
 const {width} = Dimensions.get('window');
 
 const TopLabel = () => {

@@ -1,7 +1,7 @@
 const data3 = [
   {
-    video: require('../storage/videos/reels1.mp4'),
-    image: require('../storage/images/profil.jpg'),
+    video: require('../videos/reels1.mp4'),
+    image: require('../images/profil.jpg'),
     user: 'ezgiceylan',
     explanation: 'The memory..',
     likes: 852,
@@ -10,8 +10,8 @@ const data3 = [
     follow: true,
   },
   {
-    video: require('../storage/videos/reels2.mp4'),
-    image: require('../storage/images/profil5.jpg'),
+    video: require('../videos/reels2.mp4'),
+    image: require('../images/profil5.jpg'),
     user: 'guneys',
     explanation: 'Arkadaşlarımı çok seviyorum <3',
     likes: 25,
@@ -20,8 +20,8 @@ const data3 = [
     follow: true,
   },
   {
-    video: require('../storage/videos/reels3.mp4'),
-    image: require('../storage/images/cat.jpg'),
+    video: require('../videos/reels3.mp4'),
+    image: require('../images/cat.jpg'),
     user: 'funnycats',
     explanation: 'Günaydııınnnn',
     comment: 5,
@@ -30,8 +30,8 @@ const data3 = [
     follow: true,
   },
   {
-    video: require('../storage/videos/reels4.mp4'),
-    image: require('../storage/images/ezgiceylan.jpeg'),
+    video: require('../videos/reels4.mp4'),
+    image: require('../images/ezgiceylan.jpeg'),
     user: 'theart',
     explanation: 'Harika bir haftasonu!',
     likes: 184,
@@ -40,8 +40,8 @@ const data3 = [
     follow: true,
   },
   {
-    video: require('../storage/videos/reels5.mp4'),
-    image: require('../storage/images/profil6.jpg'),
+    video: require('../videos/reels5.mp4'),
+    image: require('../images/profil6.jpg'),
     user: 'sinemm',
     explanation: 'New phone',
     comment: 55,
@@ -50,8 +50,8 @@ const data3 = [
     follow: true,
   },
   {
-    video: require('../storage/videos/reels6.mp4'),
-    image: require('../storage/images/profil3.jpg'),
+    video: require('../videos/reels6.mp4'),
+    image: require('../images/profil3.jpg'),
     user: 'theart',
     explanation: 'Bu vr harika dostum..',
     likes: 124,

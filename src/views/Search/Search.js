@@ -1,9 +1,9 @@
 import React from 'react';
-import {FlatList, Image, SafeAreaView, TouchableOpacity} from 'react-native';
+import {FlatList, Image, SafeAreaView} from 'react-native';
 import {useScrollToTop} from '@react-navigation/native';
 
 import SearchBar from '../../components/SearchBar/SearchBar';
-import data2 from '../../storage/data2';
+import data from '../../storage/database/search';
 
 const Search = () => {
   const flatListRef = React.useRef(null);
@@ -22,7 +22,7 @@ const Search = () => {
       <FlatList
         ref={flatListRef}
         horizontal={false}
-        data={data2}
+        data={data}
         keyExtractor={(_item, index) => index.toString()}
         renderItem={renderItem}
         numColumns={3}

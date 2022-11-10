@@ -2,7 +2,7 @@ import React from 'react';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-import data from '../../storage/data';
+import data from '../../storage/database/post';
 
 import styles from './HomeComponents.style';
 

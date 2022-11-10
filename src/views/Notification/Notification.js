@@ -11,7 +11,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useNavigation} from '@react-navigation/native';
 
 import Container from '../../components/Container/Container';
-import notification from '../../storage/notification';
+import notification from '../../storage/database/notification';
 
 import styles from './Notification.style';
 const Header = () => {

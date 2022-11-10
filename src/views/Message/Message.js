@@ -1,8 +1,8 @@
 import React from 'react';
-import {Image, ScrollView, Text, View} from 'react-native';
+import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 
 import SearchBar from '../../components/SearchBar/SearchBar';
-import message from '../../storage/message';
+import message from '../../storage/database/message';
 
 import styles from './styles';
 const Message = () => {
@@ -20,7 +20,7 @@ const Message = () => {
       <View>
         {message.map((data, index) => {
           return (
-            <View key={index}>
+            <TouchableOpacity key={index} activeOpacity={0.6}>
               <View style={styles.messageContainer}>
                 <Image style={styles.image} source={data.image} />
                 <View style={{marginLeft: 10}}>
@@ -28,7 +28,7 @@ const Message = () => {
                   <Text style={styles.message}>{data.message}</Text>
                 </View>
               </View>
-            </View>
+            </TouchableOpacity>
           );
         })}
       </View>

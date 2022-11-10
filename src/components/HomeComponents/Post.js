@@ -4,7 +4,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-import data from '../../storage/data';
+import data from '../../storage/database/post';
 
 import styles from './HomeComponents.style';
 

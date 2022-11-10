@@ -11,7 +11,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import Container from '../../components/Container/Container';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import setting from '../../storage/setting';
+import setting from '../../storage/database/setting';
 
 import styles from './Setting.style';
 const SettingComponent = () => {

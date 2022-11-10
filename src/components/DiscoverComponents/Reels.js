@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList, View} from 'react-native';
 
-import data3 from '../../storage/data3';
+import data from '../../storage/database/reels';
 
 import Reel from './ReelComponent';
 
@@ -9,7 +9,7 @@ const Reels = () => {
   return (
     <View style={{flex: 1}}>
       <FlatList
-        data={data3}
+        data={data}
         vertical={true}
         pagingEnabled={true}
         keyExtractor={(_item, index) => index.toString()}
