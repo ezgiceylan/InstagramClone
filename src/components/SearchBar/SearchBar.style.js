@@ -10,6 +10,7 @@ export default StyleSheet.create({
     padding: 5,
     width: '95%',
     fontSize: 18,
+    color: 'white',
   },
   icon: {
     margin: 10,
