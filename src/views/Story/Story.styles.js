@@ -11,6 +11,7 @@ export default StyleSheet.create({
     height: 55,
     paddingLeft: 15,
     borderRadius: 50,
+    marginLeft: 5,
     width: '87%',
   },
   ıcon: {
@@ -22,7 +23,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     position: 'absolute',
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: 5,
   },
   footer: {
     flexDirection: 'row',

@@ -163,6 +163,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 23,
   },
+  icon: {
+    marginTop: 10,
+    marginLeft: 15,
+  },
   title: {
     color: 'white',
     fontSize: 22,

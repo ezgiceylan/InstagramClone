@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     borderColor: '#2E2E2E',
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft: 15,
   },
   image: {
     width: '90%',
@@ -39,6 +40,7 @@ const styles = StyleSheet.create({
   label: {
     color: 'white',
     marginTop: 5,
+    marginLeft: 15,
   },
 });
 export default Highlighs;

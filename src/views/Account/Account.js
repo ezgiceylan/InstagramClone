@@ -9,7 +9,7 @@ import TopTabNavigator from '../../navigation/TopTabNavigator';
 
 const Account = ({route}) => {
   return (
-    <Container insets={{top: true}}>
+    <Container insets={{top: true, right: true, bottom: true}}>
       <ProfilBar />
       <ProfileHeader />
       <Bio route={route.params} />

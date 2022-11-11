@@ -65,7 +65,7 @@ const Post = () => {
                 <Feather name="send" size={24} color="white" />
               </View>
 
-              <View style={{marginRight: 10}}>
+              <View style={{marginRight: 20}}>
                 <FontAwesome name="bookmark-o" size={24} color="white" />
               </View>
             </View>

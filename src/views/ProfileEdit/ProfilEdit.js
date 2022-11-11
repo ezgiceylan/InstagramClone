@@ -62,7 +62,12 @@ const ProfilEdit = () => {
                   },
                 })
               }>
-              <AntDesign name="check" size={32} color="#0098fd" />
+              <AntDesign
+                name="check"
+                size={32}
+                color="#0098fd"
+                style={{marginRight: 10}}
+              />
             </TouchableOpacity>
           </View>
         </View>
@@ -137,6 +142,7 @@ const ProfilEdit = () => {
             color: 'white',
             marginTop: 15,
             fontSize: 19,
+            marginLeft: 10,
           }}>
           Bağlantı ekle
         </Text>

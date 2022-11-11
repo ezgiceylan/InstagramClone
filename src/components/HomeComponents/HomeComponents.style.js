@@ -36,7 +36,7 @@ export default StyleSheet.create({
   leftIcon: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '25%',
+    width: '30%',
     marginLeft: 15,
   },
   ıconContainer: {
@@ -64,7 +64,7 @@ export default StyleSheet.create({
   },
   comment: {
     marginLeft: 15,
-    marginTop: 2,
+    marginTop: 10,
     opacity: 0.8,
     color: 'grey',
   },
@@ -117,6 +117,7 @@ export default StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     width: '34%',
+    marginRight: 5,
   },
   logoContainer: {
     marginTop: 5,

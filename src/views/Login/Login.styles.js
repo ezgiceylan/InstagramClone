@@ -30,7 +30,7 @@ export default StyleSheet.create({
     paddingRight: 6,
   },
   login: {
-    backgroundColor: '#329CFA',
+    backgroundColor: '#0195f7',
     width: '84%',
     height: 50,
     borderRadius: 10,

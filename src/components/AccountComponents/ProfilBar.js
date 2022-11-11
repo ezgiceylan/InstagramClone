@@ -31,7 +31,12 @@ const ProfilBar = () => {
 
       <View style={styles.right}>
         <TouchableOpacity onPress={() => bottomSheet2.current.show()}>
-          <FontAwesome name="plus-square-o" size={28} color="white" />
+          <FontAwesome
+            name="plus-square-o"
+            size={28}
+            color="white"
+            style={{marginRight: 10}}
+          />
         </TouchableOpacity>
         <BottomSheet
           hasDraggableIcon
@@ -151,18 +156,21 @@ const styles = StyleSheet.create({
     height: '7%',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginHorizontal: 10,
   },
   left: {
     flexDirection: 'row',
     alignItems: 'center',
     width: '43%',
     justifyContent: 'space-around',
+    marginLeft: 10,
   },
   right: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
-    width: '22%',
+    width: '25%',
+    marginRight: 10,
   },
   header: {
     color: 'white',

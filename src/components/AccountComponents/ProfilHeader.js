@@ -36,12 +36,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 20,
+    marginHorizontal: 10,
   },
   image3: {
     height: 80,
     width: 80,
     borderRadius: 100,
-    marginLeft: 5,
+    marginLeft: 10,
+    marginBottom: 10,
   },
   numbers: {
     flexDirection: 'row',

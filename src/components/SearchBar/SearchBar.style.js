@@ -8,14 +8,15 @@ export default StyleSheet.create({
     borderRadius: 10,
     paddingLeft: 50,
     padding: 5,
-    width: '95%',
+    marginBottom: 15,
     fontSize: 18,
     color: 'white',
+    marginHorizontal: 15,
   },
   icon: {
     margin: 10,
     padding: 10,
-    paddingLeft: 15,
+    paddingLeft: 20,
     position: 'absolute',
   },
 });

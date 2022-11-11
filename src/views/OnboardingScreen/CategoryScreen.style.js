@@ -21,7 +21,7 @@ export default StyleSheet.create({
   },
   category: {
     color: 'white',
-    marginLeft: 10,
+    marginLeft: 15,
     marginTop: 10,
     fontWeight: 'bold',
     fontSize: 16,
@@ -33,7 +33,7 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
   icon: {
-    marginRight: 10,
+    marginRight: 20,
   },
   btn: {
     flex: 1,
