@@ -18,6 +18,7 @@ const ProfilBar = () => {
   const bottomSheet = useRef();
   const bottomSheet2 = useRef();
   const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.body}>
       <View style={styles.left}>

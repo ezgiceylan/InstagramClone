@@ -11,7 +11,7 @@ const Account = ({route}) => {
   return (
     <Container insets={{top: true, right: true, bottom: true}}>
       <ProfilBar />
-      <ProfileHeader />
+      <ProfileHeader route={route.params} />
       <Bio route={route.params} />
       <Highlighs />
       <TopTabNavigator />

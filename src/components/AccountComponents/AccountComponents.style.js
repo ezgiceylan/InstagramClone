@@ -25,9 +25,10 @@ export default StyleSheet.create({
     justifyContent: 'center',
     marginVertical: 5,
     marginBottom: 20,
-    marginHorizontal: 15,
+    marginLeft: 15,
+    marginRight: 10,
     alignItems: 'center',
-    width: '80%',
+    width: '82%',
   },
   editText: {
     color: '#D8D8D8',
@@ -41,7 +42,7 @@ export default StyleSheet.create({
     width: '10%',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 40,
+    marginRight: 15,
     marginVertical: 5,
   },
   body: {

@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 24,
     fontWeight: 'bold',
-    marginLeft: 10,
+    marginLeft: 5,
   },
   right: {
     width: '30%',
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginHorizontal: 15,
-    marginBottom: 15,
+    marginBottom: 10,
   },
   videosText: {
     color: 'white',
@@ -123,6 +123,7 @@ const styles = StyleSheet.create({
     width: width * 0.5,
     resizeMode: 'cover',
     borderWidth: 1,
+    borderColor: 'black',
   },
   labelText: {
     color: 'white',

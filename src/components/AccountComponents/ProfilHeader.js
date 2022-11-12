@@ -1,12 +1,12 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-
-const ProfileHeader = () => {
+const defaultImage = require('../../../assets/images/profil.jpg');
+const ProfileHeader = ({route}) => {
   return (
     <View style={styles.container3}>
       <View>
         <Image
-          source={require('../../../assets/images/profil.jpg')}
+          source={route ? {uri: route.image} : defaultImage}
           style={styles.image3}
         />
       </View>

@@ -16,6 +16,7 @@ export default StyleSheet.create({
     fontSize: 18,
     opacity: 0.8,
     fontWeight: '500',
+    marginRight: 10,
   },
   image: {
     height: 60,

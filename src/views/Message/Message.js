@@ -26,7 +26,12 @@ const Message = ({navigation}) => {
           </TouchableWithoutFeedback>
           <Text style={styles.userName}>ezgiceylan</Text>
         </View>
-        <Feather name="edit" size={24} color="white" />
+        <Feather
+          name="edit"
+          size={24}
+          color="white"
+          style={{marginRight: 20}}
+        />
       </View>
       <ScrollView>
         <View style={{marginTop: 10}}>

@@ -31,7 +31,7 @@ const ProfilEdit = () => {
       cropping: true,
     }).then(images => {
       setImage(images?.path);
-      console.log(image);
+      bottomSheet.current.close();
     });
   };
 
@@ -59,6 +59,7 @@ const ProfilEdit = () => {
                   params: {
                     name: name,
                     bio: bio,
+                    image: image,
                   },
                 })
               }>

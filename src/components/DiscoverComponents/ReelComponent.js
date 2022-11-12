@@ -30,6 +30,7 @@ const Reel = ({item}) => {
           resizeMode="cover"
           repeat={true}
           style={styles.video}
+          muted={true}
         />
 
         <View

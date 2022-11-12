@@ -19,6 +19,7 @@ const Bio = ({route}) => {
         style={{
           marginTop: 10,
           flexDirection: 'row',
+          justifyContent: 'space-around',
         }}>
         <TouchableOpacity
           style={styles.edit}
