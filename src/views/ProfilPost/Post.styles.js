@@ -78,7 +78,6 @@ export default StyleSheet.create({
   },
   comment: {
     marginLeft: 15,
-
     opacity: 0.8,
     color: 'grey',
   },
