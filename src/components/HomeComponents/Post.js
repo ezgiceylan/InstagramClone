@@ -3,6 +3,7 @@ import {Image, Text, TouchableOpacity, View} from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {useNavigation} from '@react-navigation/native';
 
 import data from '../../storage/database/post';
 
@@ -29,7 +30,7 @@ const Post = () => {
     },
     [checkLike],
   );
-
+  const navigation = useNavigation();
   return (
     <View style={styles.line}>
       {data.map((data, index) => {
@@ -61,7 +62,19 @@ const Post = () => {
                   />
                 </TouchableOpacity>
 
-                <Feather name="message-circle" size={24} color="white" />
+                <TouchableOpacity
+                  onPress={() =>
+                    navigation.navigate({
+                      name: 'Comment',
+                      params: {
+                        image: data.image,
+                        user: data.postName,
+                        explanation: data.explanation,
+                      },
+                    })
+                  }>
+                  <Feather name="message-circle" size={24} color="white" />
+                </TouchableOpacity>
                 <Feather name="send" size={24} color="white" />
               </View>
 

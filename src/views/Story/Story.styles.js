@@ -28,6 +28,7 @@ export default StyleSheet.create({
   footer: {
     flexDirection: 'row',
     alignContent: 'flex-end',
+    marginBottom: 10,
   },
   profil: {
     width: 35,

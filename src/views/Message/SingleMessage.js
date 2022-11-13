@@ -21,10 +21,6 @@ import styles from './styles';
 const SingleMessage = ({route, navigation}) => {
   const [messageText, setMessageText] = useState('');
 
-  const resultMessage = useMemo(() => {
-    <Text>{messageText}</Text>;
-  }, [messageText]);
-
   return (
     <Container insets={{bottom: true, top: true}}>
       <View style={{justifyContent: 'space-between', flex: 1}}>
@@ -77,11 +73,10 @@ const SingleMessage = ({route, navigation}) => {
               />
             </View>
           ) : (
-            <TouchableOpacity onPress={resultMessage}>
+            <TouchableOpacity>
               <Text style={styles.send}>Gönder</Text>
             </TouchableOpacity>
           )}
-          <Text>{resultMessage}</Text>
         </View>
       </View>
     </Container>

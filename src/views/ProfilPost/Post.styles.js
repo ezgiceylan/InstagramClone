@@ -1,8 +1,21 @@
 import {StyleSheet} from 'react-native';
+
 export default StyleSheet.create({
+  label: {
+    color: 'white',
+    fontSize: 22,
+    fontWeight: 'bold',
+  },
+  left: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: 10,
+  },
+
   top: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginBottom: 5,
   },
   line: {
     height: '100%',
@@ -30,8 +43,8 @@ export default StyleSheet.create({
   },
   ımage: {
     width: '100%',
-    height: 370,
-    resizeMode: 'contain',
+    height: 400,
+    resizeMode: 'cover',
   },
   leftIcon: {
     flexDirection: 'row',
@@ -61,65 +74,12 @@ export default StyleSheet.create({
     marginLeft: 15,
     fontSize: 10,
     color: 'grey',
+    marginTop: 5,
   },
   comment: {
     marginLeft: 15,
-    marginTop: 10,
+
     opacity: 0.8,
     color: 'grey',
-  },
-  topContainer: {
-    paddingTop: 6,
-  },
-  top2: {
-    marginLeft: 10,
-  },
-  circle: {
-    width: 75,
-    height: 75,
-    backgroundColor: 'black',
-    borderWidth: 1.5,
-    borderRadius: 100,
-    borderColor: '#2E2E2E',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  image2: {
-    width: '90%',
-    height: '90%',
-    borderRadius: 100,
-    borderWidth: 0.8,
-    borderColor: '#2E2E2E',
-  },
-  textLabel: {
-    textAlign: 'center',
-    fontSize: 12,
-    color: 'white',
-    marginTop: 5,
-  },
-  body: {
-    height: '7%',
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 5,
-  },
-  icon: {
-    height: 30,
-    width: 150,
-    resizeMode: 'contain',
-    margin: 5,
-    alignItems: 'center',
-    marginLeft: -5,
-  },
-  iconContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    width: '34%',
-    marginRight: 5,
-  },
-  logoContainer: {
-    marginTop: 5,
   },
 });
