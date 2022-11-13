@@ -12,9 +12,10 @@ An instagram clone developed with react-native.
 
 
 ```bash
+npm install
 git clone https://github.com/ezgiceylan/InstagramClone.git
 cd InstagramClone
-npm install
+
 ```
 ## Usage
 
