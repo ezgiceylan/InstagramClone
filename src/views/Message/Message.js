@@ -33,6 +33,7 @@ const Message = ({navigation}) => {
           style={{marginRight: 20}}
         />
       </View>
+
       <ScrollView>
         <View style={{marginTop: 10}}>
           <SearchBar />

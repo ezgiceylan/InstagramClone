@@ -25,7 +25,9 @@ const CategoryScreen = ({navigation}) => {
           olur.Bunu istediğin zaman değiştirebilirsin
         </Text>
       </View>
+
       <SearchBar />
+
       <Text style={styles.category}>Önerilenler</Text>
       <ScrollView>
         {category.map((item, index) => {

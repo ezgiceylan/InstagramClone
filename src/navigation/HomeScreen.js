@@ -3,7 +3,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import Home from '../views/Home/Home';
 import Notification from '../views/Notification/Notification';
-import Story from '../views/Story/Story';
 
 const Stack = createNativeStackNavigator();
 

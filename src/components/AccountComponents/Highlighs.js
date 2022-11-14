@@ -4,6 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 
 const Highlighs = () => {
   const navigation = useNavigation();
+
   return (
     <View style={styles.body}>
       <TouchableOpacity
@@ -24,6 +25,7 @@ const Highlighs = () => {
           style={styles.image}
         />
       </TouchableOpacity>
+
       <Text style={styles.label}>Öne Çıkanlar</Text>
     </View>
   );

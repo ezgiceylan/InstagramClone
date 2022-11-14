@@ -33,7 +33,7 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
   icon: {
-    marginRight: 20,
+    marginRight: 15,
   },
   btn: {
     flex: 1,

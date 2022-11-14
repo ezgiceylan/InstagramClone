@@ -8,7 +8,6 @@ const MessageScreen = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Message" component={Message} />
-
       <Stack.Screen name="SingleMessage" component={SingleMessage} />
     </Stack.Navigator>
   );

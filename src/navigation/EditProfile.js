@@ -4,8 +4,10 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import CategoryScreen from '../views/OnboardingScreen/CategoryScreen';
 import OnboardingScreen from '../views/OnboardingScreen/OnboardingScreen';
 import ProfilEdit from '../views/ProfileEdit/ProfilEdit';
+
 const EditProfile = () => {
   const Stack = createNativeStackNavigator();
+
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen

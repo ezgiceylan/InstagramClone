@@ -11,15 +11,13 @@ import styles from './HomeComponents.style';
 const Stories = () => {
   const navigation = useNavigation();
 
-  const openCamera = () => {
-    ImagePicker.openCamera({
+  const openCamera = React.useCallback(async () => {
+    await ImagePicker.openCamera({
       width: 300,
       height: 400,
       cropping: true,
-    }).then(image => {
-      console.log(image);
     });
-  };
+  }, []);
 
   return (
     <View style={styles.topContainer}>

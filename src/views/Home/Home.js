@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {RefreshControl, ScrollView} from 'react-native';
 import {useScrollToTop} from '@react-navigation/native';
 

@@ -12,6 +12,7 @@ const SearchBar = ({ıconColor, placeHolders}) => {
           placeholderTextColor="grey"
           style={styles.input}
         />
+
         {ıconColor ? (
           <Feather name="search" size={20} color="white" style={styles.icon} />
         ) : (
