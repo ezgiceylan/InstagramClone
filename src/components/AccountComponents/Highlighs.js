@@ -1,15 +1,29 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 const Highlighs = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.body}>
-      <View style={styles.container}>
+      <TouchableOpacity
+        style={styles.container}
+        onPress={() => {
+          navigation.navigate({
+            name: 'Story',
+            params: {
+              image: require('../../storage/images/avatar.jpg'),
+              name: 'Öne Çıkanlar',
+              pp: require('../../storage/images/profil.jpg'),
+              timeStory: '50h',
+            },
+          });
+        }}>
         <Image
           source={require('../../storage/images/avatar.jpg')}
           style={styles.image}
         />
-      </View>
+      </TouchableOpacity>
       <Text style={styles.label}>Öne Çıkanlar</Text>
     </View>
   );

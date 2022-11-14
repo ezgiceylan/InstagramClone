@@ -9,6 +9,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginLeft: 10,
+    marginTop: 10,
   },
   topContainer: {
     marginTop: 5,
@@ -27,7 +28,6 @@ export default StyleSheet.create({
   line: {
     borderBottomWidth: 0.3,
     borderBottomColor: '#3a3a3a',
-
     marginTop: 10,
   },
   bottom: {

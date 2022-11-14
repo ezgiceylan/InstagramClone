@@ -1,5 +1,6 @@
 import React from 'react';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import ImagePicker from 'react-native-image-crop-picker';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 
@@ -9,6 +10,17 @@ import styles from './HomeComponents.style';
 
 const Stories = () => {
   const navigation = useNavigation();
+
+  const openCamera = () => {
+    ImagePicker.openCamera({
+      width: 300,
+      height: 400,
+      cropping: true,
+    }).then(image => {
+      console.log(image);
+    });
+  };
+
   return (
     <View style={styles.topContainer}>
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
@@ -19,7 +31,7 @@ const Stories = () => {
               key={index}
               onPress={() => {
                 data.id === 1
-                  ? null
+                  ? openCamera()
                   : navigation.navigate({
                       name: 'Story',
                       params: {
