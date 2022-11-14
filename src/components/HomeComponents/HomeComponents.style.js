@@ -84,6 +84,21 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  myStory: {
+    width: 75,
+    height: 75,
+    backgroundColor: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  plusIcon: {
+    position: 'absolute',
+    zIndex: 1,
+    bottom: 5,
+    right: 5,
+    backgroundColor: 'white',
+    borderRadius: 100,
+  },
   image2: {
     width: '90%',
     height: '90%',
@@ -121,5 +136,28 @@ export default StyleSheet.create({
   },
   logoContainer: {
     marginTop: 5,
+  },
+  input: {
+    backgroundColor: '#363636',
+    height: 30,
+    margin: 10,
+    borderRadius: 10,
+    paddingLeft: 40,
+    padding: 5,
+    marginBottom: 5,
+    fontSize: 16,
+    color: 'white',
+    marginHorizontal: 15,
+  },
+  sheetImage: {
+    width: 35,
+    height: 35,
+    borderRadius: 100,
+    margin: 10,
+  },
+  sheetLabel: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 13,
   },
 });

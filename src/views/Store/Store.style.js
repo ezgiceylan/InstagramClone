@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     margin: 10,
+    marginBottom: 5,
   },
   videos: {
     backgroundColor: '#262626',

@@ -41,7 +41,6 @@ const Slide = ({item}) => {
               height: 110,
               width: 130,
               resizeMode: 'cover',
-              backgroundColor: 'red',
             }}
           />
         )}

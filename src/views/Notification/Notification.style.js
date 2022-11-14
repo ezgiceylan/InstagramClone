@@ -9,8 +9,8 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
   },
   image: {
-    height: 50,
-    width: 50,
+    height: 45,
+    width: 45,
     borderRadius: 100,
   },
   user: {
@@ -36,6 +36,7 @@ export default StyleSheet.create({
     margin: 10,
     fontSize: 15,
     fontWeight: 'bold',
+    marginLeft: 15,
   },
   line: {
     height: '100%',
@@ -49,6 +50,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: 5,
     marginBottom: 10,
+    marginTop: 10,
   },
   headerText: {
     color: 'white',

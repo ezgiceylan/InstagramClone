@@ -22,13 +22,20 @@ const notification = [
   },
   {
     id: '4',
+    user: 'busraoz',
+    message: 'seni takip etmeye başladı · 1h',
+    image: require('../images/tag1.jpg'),
+    follow: true,
+  },
+  {
+    id: '5',
     user: 'zeynepppp',
     message: 'seni takip etmeye başladı. · 1h ',
     image: require('../images/post.jpg'),
     follow: true,
   },
   {
-    id: '5',
+    id: '6',
     user: 'alii',
     message: 'seni takip etmeye başladı. · 1h',
     image: require('../images/profil6.jpg'),
@@ -36,21 +43,21 @@ const notification = [
   },
 
   {
-    id: '6',
-    user: 'busraoz',
+    id: '7',
+    user: 'betull',
     message: 'seni takip etmeye başladı · 1h',
     image: require('../images/tag1.jpg'),
     follow: true,
   },
   {
-    id: '7',
+    id: '8',
     user: 'nihal',
     message: 'seni takip etmeye başladı · 1h',
     image: require('../images/reels.jpg'),
     follow: true,
   },
   {
-    id: '8',
+    id: '9',
     user: 'photographer',
     message: 'seni takip etmeye başladı · 1h',
     image: require('../random/image11.jpg'),

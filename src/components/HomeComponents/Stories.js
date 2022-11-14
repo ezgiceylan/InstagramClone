@@ -1,5 +1,6 @@
 import React from 'react';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 
 import data from '../../storage/database/post';
@@ -30,9 +31,18 @@ const Stories = () => {
                     });
               }}>
               <View style={styles.top2}>
-                <View style={styles.circle}>
-                  <Image source={data.image} style={styles.image2} />
-                </View>
+                {data.id === 1 ? (
+                  <View style={styles.myStory}>
+                    <View style={styles.plusIcon}>
+                      <AntDesign name="pluscircle" size={16} color="#0195f7" />
+                    </View>
+                    <Image source={data.image} style={styles.image2} />
+                  </View>
+                ) : (
+                  <View style={styles.circle}>
+                    <Image source={data.image} style={styles.image2} />
+                  </View>
+                )}
 
                 <Text style={styles.textLabel}>{data.name}</Text>
               </View>

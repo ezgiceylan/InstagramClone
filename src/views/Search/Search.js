@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList, Image, SafeAreaView} from 'react-native';
+import {FlatList, Image, SafeAreaView, TouchableOpacity} from 'react-native';
 import {useScrollToTop} from '@react-navigation/native';
 
 import SearchBar from '../../components/SearchBar/SearchBar';
@@ -9,11 +9,13 @@ const Search = () => {
   const flatListRef = React.useRef(null);
   useScrollToTop(flatListRef);
 
-  const renderItem = ({item}) => (
-    <Image
-      source={item.image}
-      style={{width: '33%', height: 130, margin: 1.5}}
-    />
+  const renderItem = ({item, index}) => (
+    <TouchableOpacity key={index} style={{width: '33%', margin: 0.8}}>
+      <Image
+        source={item.image}
+        style={{width: '100%', height: 130, borderWidth: 1}}
+      />
+    </TouchableOpacity>
   );
 
   return (
