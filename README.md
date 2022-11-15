@@ -7,7 +7,17 @@
 
 An instagram clone developed with react-native.
 
+## Screenshots
+
+<p float="left">
+  <img src="https://github.com/ezgiceylan/InstagramClone/blob/main/assets/screenshot/Login.png?raw=true" width="200" />
+  <img src="https://github.com/ezgiceylan/InstagramClone/blob/main/assets/screenshot/Account.png?raw=true" width="200" /> 
+  <img src="https://github.com/ezgiceylan/InstagramClone/blob/main/assets/screenshot/Home.png?raw=true" width="200" />
+</p>
+ 
+
 ## Install
+
 
 
 
