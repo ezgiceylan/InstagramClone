@@ -1,5 +1,5 @@
 
-![Logo](https://studysection.com/blog/wp-content/uploads/2020/08/react-native-logo.png)
+![Logo](https://i.pinimg.com/originals/97/4e/fa/974efa9d940187be60a70c2359dcd6d0.webp)
 
 
 # Instagram-Clone
