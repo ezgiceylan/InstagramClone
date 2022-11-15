@@ -38,5 +38,6 @@ npx react-native run-android
 ### IOS
 ```bash
 npx react-native start
+cd ios && pod install
 npx react-native run-ios
 ``` 
