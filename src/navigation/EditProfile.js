@@ -5,9 +5,9 @@ import CategoryScreen from '../views/OnboardingScreen/CategoryScreen';
 import OnboardingScreen from '../views/OnboardingScreen/OnboardingScreen';
 import ProfilEdit from '../views/ProfileEdit/ProfilEdit';
 
-const EditProfile = () => {
-  const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 
+const EditProfile = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen

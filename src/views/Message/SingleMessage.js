@@ -35,6 +35,7 @@ const SingleMessage = ({route, navigation}) => {
               <Text style={styles.messageUser}>{route.params.username}</Text>
             </View>
           </View>
+
           <View style={{flexDirection: 'row', marginRight: 10}}>
             <Ionicons
               name="call-outline"
@@ -57,6 +58,7 @@ const SingleMessage = ({route, navigation}) => {
             value={messageText}
             onChangeText={setMessageText}
           />
+
           {!messageText.length ? (
             <View style={{flexDirection: 'row'}}>
               <Feather name="mic" size={24} color="white" style={styles.icon} />

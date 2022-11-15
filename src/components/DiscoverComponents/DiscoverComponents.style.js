@@ -3,7 +3,6 @@ export default StyleSheet.create({
   video: {
     position: 'absolute',
     width: '100%',
-    height: '100%',
     zIndex: 1,
   },
   image: {
@@ -39,7 +38,7 @@ export default StyleSheet.create({
     zIndex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 12,
+    marginBottom: 5,
     marginLeft: 5,
   },
   soundText: {
@@ -51,7 +50,7 @@ export default StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     marginRight: 10,
-    marginBottom: 15,
+    marginBottom: 5,
   },
   number: {
     color: 'white',

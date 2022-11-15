@@ -54,11 +54,7 @@ export default StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: 'white',
   },
-  lineGrey: {
-    borderBottomWidth: 0.8,
-    borderBottomColor: '#3a3a3a',
-    marginTop: 10,
-  },
+
   blueText: {
     color: '#0098fd',
     fontSize: 18,
@@ -66,8 +62,7 @@ export default StyleSheet.create({
   },
   blueContainer: {
     justifyContent: 'space-around',
-    marginTop: 20,
-    height: '22%',
+    height: '25%',
   },
   sheetText: {
     color: 'white',

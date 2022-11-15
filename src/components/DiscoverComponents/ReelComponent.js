@@ -1,50 +1,51 @@
-import React, {useRef} from 'react';
-import {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import AnimatedLottieView from 'lottie-react-native';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Dimensions, Image, Text, TouchableOpacity, View} from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Feather from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Video from 'react-native-video';
-
-import Container from '../Container/Container';
+import {useBottomTabBarHeight} from '@react-navigation/bottom-tabs';
 
 import styles from './DiscoverComponents.style';
 
 const Reel = ({item}) => {
   const ref = useRef(null);
 
+  const bottomTabBarHeight = useBottomTabBarHeight();
+  const insets = useSafeAreaInsets();
+
+  const height =
+    Dimensions.get('window').height - bottomTabBarHeight - insets.top;
+
   return (
-    <Container>
+    <View
+      style={{
+        height: height,
+        justifyContent: 'flex-end',
+      }}>
+      <Video
+        videoRef={ref}
+        source={item.video}
+        resizeMode="cover"
+        repeat={true}
+        style={{...styles.video, height: height}}
+        muted={true}
+      />
+
       <View
         style={{
-          width: '100%',
-          flex: 1,
-          height: 718,
-          justifyContent: 'flex-end',
+          zIndex: 1,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          paddingBottom: 10,
         }}>
-        <Video
-          videoRef={ref}
-          source={item.video}
-          resizeMode="cover"
-          repeat={true}
-          style={styles.video}
-          muted={true}
-        />
-
-        <View
-          style={{
-            zIndex: 1,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            paddingBottom: 10,
-          }}>
-          <Left item={item} />
-          <Right item={item} />
-        </View>
+        <Left item={item} />
+        <Right item={item} />
       </View>
-    </Container>
+    </View>
   );
 };
 const Right = ({item}) => {

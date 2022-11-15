@@ -137,22 +137,25 @@ const ProfilEdit = () => {
           </TextInput>
           <View style={styles.line} />
         </View>
-
-        <Text
-          style={{
-            color: 'white',
-            marginTop: 15,
-            fontSize: 19,
-            marginLeft: 10,
-          }}>
-          Bağlantı ekle
-        </Text>
+        <View style={styles.lineGrey}>
+          <Text
+            style={{
+              color: 'white',
+              marginTop: 15,
+              fontSize: 19,
+              marginLeft: 10,
+              marginBottom: 5,
+            }}>
+            Bağlantı ekle
+          </Text>
+        </View>
 
         <View style={styles.blueContainer}>
           <TouchableOpacity
             onPress={() => navigation.navigate('OnboardingScreen')}>
             <Text style={styles.blueText}>Profesyonel Hesaba Geçiş Yap</Text>
           </TouchableOpacity>
+
           <Text style={styles.blueText}>Avatarı Düzenle</Text>
 
           <Text style={styles.blueText}>Kişisel bilgi ayarları</Text>

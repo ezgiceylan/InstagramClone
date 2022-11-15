@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 24,
     fontWeight: 'bold',
-    marginLeft: 5,
+    marginLeft: 8,
   },
   right: {
     width: '30%',

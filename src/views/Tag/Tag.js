@@ -2,6 +2,7 @@ import React from 'react';
 import {Image, View} from 'react-native';
 
 import styles from './Tag.style';
+
 const Tag = () => {
   return (
     <View style={styles.container}>

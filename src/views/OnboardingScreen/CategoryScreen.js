@@ -6,15 +6,35 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import Container from '../../components/Container/Container';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import category from '../../storage/database/category';
+import categorys from '../../storage/database/category';
 
 import styles from './CategoryScreen.style';
 const CategoryScreen = ({navigation}) => {
+  const [circle, setCircle] = useState([]);
+  const checkCircle = React.useCallback((currentCircle, name) => {
+    return currentCircle.find(item => item === name);
+  }, []);
+
+  const handleCirclePress = React.useCallback(
+    category => {
+      setCircle(currentBlue => {
+        const isFollowed = checkCircle(currentBlue, category);
+
+        if (isFollowed) {
+          return currentBlue.filter(item => item !== category);
+        }
+
+        return [...currentBlue, category];
+      });
+    },
+    [checkCircle],
+  );
+
   return (
     <Container insets={{top: true, bottom: true}}>
       <TouchableOpacity
         onPress={() => navigation.goBack()}
-        style={{marginTop: 5}}>
+        style={{marginTop: 5, marginLeft: 10}}>
         <Ionicons name="chevron-back" size={28} color="white" />
       </TouchableOpacity>
 
@@ -25,21 +45,21 @@ const CategoryScreen = ({navigation}) => {
           olur.Bunu istediğin zaman değiştirebilirsin
         </Text>
       </View>
-
-      <SearchBar />
+      <View style={{marginHorizontal: 5, marginBottom: 10}}>
+        <SearchBar />
+      </View>
 
       <Text style={styles.category}>Önerilenler</Text>
       <ScrollView>
-        {category.map((item, index) => {
-          const [circle, setCircle] = useState(item.isCircle);
+        {categorys.map((item, index) => {
           return (
             <View key={index}>
               <View style={styles.categoryContainer}>
                 <Text style={styles.category}>{item.name}</Text>
                 <TouchableOpacity
-                  onPress={() => setCircle(!circle)}
+                  onPress={() => handleCirclePress(item.name)}
                   activeOpacity={0.5}>
-                  {circle ? (
+                  {checkCircle(circle, item.name) ? (
                     <AntDesign
                       name="checkcircle"
                       size={28}

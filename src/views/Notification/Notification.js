@@ -121,6 +121,7 @@ const Notification = () => {
               </Text>
             </View>
           </View>
+
           <View style={{alignItems: 'center'}}>
             <Image
               style={styles.story}

@@ -11,8 +11,10 @@ import Search from '../views/Search/Search';
 import AccountScreen from './AccountScreen';
 import HomeScreen from './HomeScreen';
 import StoreScreen from './StoreScreen';
+
+const Tab = createBottomTabNavigator();
+
 const BottomTab = () => {
-  const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({

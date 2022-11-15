@@ -1,39 +1,26 @@
 import React, {useState} from 'react';
-import {
-  Alert,
-  Image,
-  KeyboardAvoidingView,
-  Platform,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {Alert, Image, Text, TouchableOpacity, View} from 'react-native';
 import {Linking} from 'react-native';
 import {TextInput} from 'react-native-paper';
-import {useHeaderHeight} from '@react-navigation/elements';
 
 import Container from '../../components/Container/Container';
+import Content from '../../components/Content/Content';
 
 import styles from './Login.styles';
 
-const Login = ({navigation}) => {
-  const trueEmail = 'E';
-  const truePassword = '1';
+const trueEmail = 'E';
+const truePassword = '1';
 
+const Login = ({navigation}) => {
   const [passwordVisible, setPasswordVisible] = useState(true);
 
   const [name, setName] = useState(null);
   const [password, setPassword] = useState(null);
 
-  const headerHeight = useHeaderHeight();
-
   return (
-    <KeyboardAvoidingView
-      style={styles.body}
-      keyboardVerticalOffset={headerHeight}
-      behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-      <Container insets={{top: true, bottom: true}}>
-        <View style={{flex: 1, justifyContent: 'space-around'}}>
+    <Container insets={{top: true, bottom: true}}>
+      <Content>
+        <View style={{flex: 1}}>
           <View style={styles.topContainer}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Text style={{color: 'white', opacity: 0.6, fontSize: 14}}>
@@ -50,14 +37,14 @@ const Login = ({navigation}) => {
             />
           </View>
 
-          <View style={styles.ınputsContainer}>
+          <View style={styles.keyboardView}>
             <TextInput
               theme={{colors: {text: 'white'}}}
               placeholder="Telefon numarası,e-posta adresi veya kullanıcı adı"
               onChangeText={item => setName(item)}
               placeholderTextColor="grey"
               selectionColor="grey"
-              style={styles.usernameInput}
+              style={styles.textInput}
               activeOutlineColor="grey"
               activeUnderlineColor="#3a3a3a"
             />
@@ -67,7 +54,7 @@ const Login = ({navigation}) => {
               placeholder="Şifre"
               placeholderTextColor="grey"
               onChangeText={itemP => setPassword(itemP)}
-              style={styles.usernameInput}
+              style={styles.textInput}
               selectionColor="grey"
               secureTextEntry={passwordVisible}
               activeUnderlineColor="#3a3a3a"
@@ -94,45 +81,49 @@ const Login = ({navigation}) => {
               <Text style={styles.loginText}>Giriş yap</Text>
             </TouchableOpacity>
 
-            <View style={styles.text}>
-              <Text style={{fontSize: 12, color: 'grey'}}>
-                Giriş detaylarını mı unuttun?{' '}
-              </Text>
-              <Text style={styles.help}>Giriş yapmak için yardım al.</Text>
-            </View>
+            <View style={{alignItems: 'center', padding: 10}}>
+              <View style={styles.text}>
+                <Text style={{fontSize: 12, color: 'grey'}}>
+                  Giriş detaylarını mı unuttun?{' '}
+                </Text>
+                <Text style={styles.help}> Giriş yapmak için yardım al.</Text>
+              </View>
 
-            <View style={styles.seperatorStyle}>
-              <View style={styles.seperator} />
-              <Text style={{color: 'grey'}}> YA DA </Text>
-              <View style={styles.seperator} />
-            </View>
+              <View style={styles.seperatorStyle}>
+                <View style={styles.seperator} />
+                <Text style={{color: 'grey'}}> YA DA </Text>
+                <View style={styles.seperator} />
+              </View>
 
-            <View style={styles.facebook}>
-              <Image source={require('../../../assets/images/facebook.png')} />
-              <TouchableOpacity
-                onPress={() => {
-                  Linking.openURL('https://www.facebook.com/login/');
-                }}>
-                <Text style={styles.faceText}>Facebook ile Giriş Yap</Text>
-              </TouchableOpacity>
+              <View style={styles.facebook}>
+                <Image
+                  source={require('../../../assets/images/facebook.png')}
+                />
+                <TouchableOpacity
+                  onPress={() => {
+                    Linking.openURL('https://www.facebook.com/login/');
+                  }}>
+                  <Text style={styles.faceText}>Facebook ile Giriş Yap</Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
 
           <View style={styles.bottomContainer}>
             <View style={styles.bottom}>
               <View style={{flexDirection: 'row'}}>
-                <Text style={{fontSize: 12, color: 'grey'}}>
+                <Text style={{fontSize: 12, color: 'grey', marginTop: 15}}>
                   Hesabın yok mu?{' '}
                 </Text>
-                <Text style={styles.help}> Kaydol.</Text>
+                <Text style={{...styles.help, marginTop: 15}}> Kaydol.</Text>
               </View>
 
               <View style={styles.line} />
             </View>
           </View>
         </View>
-      </Container>
-    </KeyboardAvoidingView>
+      </Content>
+    </Container>
   );
 };
 export default Login;

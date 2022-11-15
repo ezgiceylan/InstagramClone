@@ -21,7 +21,7 @@ export default StyleSheet.create({
     height: 30,
     borderRadius: 100,
     marginRight: 10,
-    marginLeft: 5,
+    marginLeft: 7,
   },
   title: {
     fontWeight: 'bold',
@@ -36,8 +36,8 @@ export default StyleSheet.create({
   leftIcon: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: '30%',
-    marginLeft: 15,
+    width: '32%',
+    marginLeft: 20,
   },
   ıconContainer: {
     flexDirection: 'row',
@@ -46,24 +46,24 @@ export default StyleSheet.create({
   },
 
   likeText: {
-    marginLeft: 15,
+    marginLeft: 20,
     marginTop: 10,
     fontWeight: 'bold',
     color: 'white',
   },
   postName: {
-    marginLeft: 15,
+    marginLeft: 20,
     fontWeight: 'bold',
     color: 'white',
     marginTop: 2,
   },
   time: {
-    marginLeft: 15,
+    marginLeft: 20,
     fontSize: 10,
     color: 'grey',
   },
   comment: {
-    marginLeft: 15,
+    marginLeft: 20,
     marginTop: 10,
     opacity: 0.8,
     color: 'grey',
@@ -72,7 +72,7 @@ export default StyleSheet.create({
     paddingTop: 6,
   },
   top2: {
-    marginLeft: 10,
+    marginLeft: 15,
   },
   circle: {
     width: 75,
@@ -132,10 +132,11 @@ export default StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     width: '34%',
-    marginRight: 5,
+    marginRight: 10,
   },
   logoContainer: {
     marginTop: 5,
+    marginLeft: 5,
   },
   input: {
     backgroundColor: '#363636',

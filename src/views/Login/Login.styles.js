@@ -1,8 +1,9 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-  body: {
-    flex: 1,
+  keyboardView: {
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
   },
   topContainer: {
     alignItems: 'center',
@@ -12,14 +13,9 @@ export default StyleSheet.create({
   logo: {
     height: 40,
     resizeMode: 'contain',
-    marginBottom: 5,
+    marginBottom: 20,
   },
-  ınputsContainer: {
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
-    height: 350,
-  },
-  usernameInput: {
+  textInput: {
     backgroundColor: '#3a3a3a',
     width: '84%',
     height: 50,
@@ -27,6 +23,7 @@ export default StyleSheet.create({
     borderRadius: 6,
     paddingLeft: 8,
     paddingRight: 6,
+    marginBottom: 20,
   },
   login: {
     backgroundColor: '#0195f7',
@@ -35,6 +32,7 @@ export default StyleSheet.create({
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 10,
   },
   loginText: {
     fontSize: 14,
@@ -59,10 +57,12 @@ export default StyleSheet.create({
   seperatorStyle: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginVertical: 15,
   },
   facebook: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginTop: 5,
   },
   faceText: {
     color: '#329CFA',
@@ -73,17 +73,15 @@ export default StyleSheet.create({
     justifyContent: 'space-evenly',
     alignItems: 'center',
     flexDirection: 'column-reverse',
-    height: '25%',
   },
   line: {
     borderBottomColor: '#3a3a3a',
     borderBottomWidth: 0.6,
     width: '100%',
-    marginBottom: 10,
+    marginTop: 10,
   },
   bottomContainer: {
     justifyContent: 'flex-end',
-
-    height: '20%',
+    height: '22%',
   },
 });

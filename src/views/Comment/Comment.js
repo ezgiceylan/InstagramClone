@@ -29,10 +29,12 @@ const Comment = ({navigation, route}) => {
               </TouchableOpacity>
               <Text style={styles.label}> Yorumlar</Text>
             </View>
+
             <View style={{justifyContent: 'center', marginRight: 20}}>
               <Feather name="send" size={24} color="white" />
             </View>
           </View>
+
           <ScrollView>
             <View style={styles.topComment}>
               <Image style={styles.image} source={route.params.image} />
@@ -45,6 +47,7 @@ const Comment = ({navigation, route}) => {
                 </Text>
               </View>
             </View>
+
             <View style={styles.line} />
             {data.map((data, index) => {
               return (
@@ -75,6 +78,7 @@ const Comment = ({navigation, route}) => {
                       </View>
                     </View>
                   </View>
+
                   <View
                     style={{
                       marginTop: 10,
@@ -103,6 +107,7 @@ const Comment = ({navigation, route}) => {
               onChangeText={setCommentText}
             />
           </View>
+
           <View>
             {!commentText.length ? (
               <Text style={{color: '#254253', marginRight: 15}}>Paylaş</Text>

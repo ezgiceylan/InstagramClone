@@ -12,22 +12,24 @@ export default StyleSheet.create({
     paddingLeft: 15,
     borderRadius: 50,
     marginLeft: 5,
-    width: '87%',
+    width: '82%',
   },
   ıcon: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: '13%',
+    width: '12%',
+    marginRight: 10,
   },
   top: {
     flexDirection: 'row',
     position: 'absolute',
     alignItems: 'center',
-    marginTop: 5,
+    marginTop: 10,
   },
   footer: {
     flexDirection: 'row',
     alignContent: 'flex-end',
+    justifyContent: 'space-between',
     marginBottom: 10,
   },
   profil: {

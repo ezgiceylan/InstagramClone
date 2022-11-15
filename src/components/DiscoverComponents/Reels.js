@@ -10,7 +10,6 @@ const Reels = () => {
     <View style={{flex: 1}}>
       <FlatList
         data={data}
-        vertical={true}
         pagingEnabled={true}
         keyExtractor={(_item, index) => index.toString()}
         renderItem={({item, index}) => <Reel item={item} />}

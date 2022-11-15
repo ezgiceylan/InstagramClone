@@ -140,6 +140,7 @@ const OnboardingScreen = ({navigation}) => {
       <TouchableOpacity onPress={() => navigation.goBack()}>
         <AntDesign name="close" size={32} color="white" style={styles.icon} />
       </TouchableOpacity>
+
       <FlatList
         ref={ref}
         onMomentumScrollEnd={updateCurrentSlideIndex}

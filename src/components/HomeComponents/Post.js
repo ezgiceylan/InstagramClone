@@ -21,9 +21,11 @@ import styles from './HomeComponents.style';
 const Post = () => {
   const [like, setLike] = useState([]);
   const bottomSheet = useRef();
+
   const checkLike = React.useCallback((currentLike, postName) => {
     return currentLike.find(item => item === postName);
   }, []);
+
   const renderItem = ({item}) => {
     return (
       <View>
@@ -63,7 +65,7 @@ const Post = () => {
                 <Text style={styles.title}>{data.postName}</Text>
               </View>
 
-              <TouchableOpacity style={{alignSelf: 'center', marginRight: 10}}>
+              <TouchableOpacity style={{alignSelf: 'center', marginRight: 15}}>
                 <Feather name="more-vertical" size={20} color="#F5F5F5" />
               </TouchableOpacity>
             </View>
@@ -172,7 +174,7 @@ const Post = () => {
               beğenme
             </Text>
 
-            <View style={{flexDirection: 'row'}}>
+            <View style={{flexDirection: 'row', marginTop: 5}}>
               <Text style={styles.postName}>{data.postName}</Text>
               <Text style={{color: 'white', marginTop: 2}}>
                 {' '}
@@ -183,7 +185,11 @@ const Post = () => {
             <Text style={styles.comment}>{data.comment}</Text>
 
             <View
-              style={{flexDirection: 'row', margin: 10, alignItems: 'center'}}>
+              style={{
+                flexDirection: 'row',
+                margin: 10,
+                alignItems: 'center',
+              }}>
               <Image
                 source={require('../../../assets/images/profil.jpg')}
                 style={styles.profilImage}

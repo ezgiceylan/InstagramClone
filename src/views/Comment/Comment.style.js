@@ -58,6 +58,15 @@ export default StyleSheet.create({
     marginLeft: 10,
     marginBottom: 10,
   },
-  answer: {color: '#aeaeae', marginRight: 10, fontWeight: 'bold', fontSize: 13},
-  input: {marginLeft: 15, fontWeight: '500', color: 'white'},
+  answer: {
+    color: '#aeaeae',
+    marginRight: 10,
+    fontWeight: 'bold',
+    fontSize: 13,
+  },
+  input: {
+    marginLeft: 15,
+    fontWeight: '500',
+    color: 'white',
+  },
 });

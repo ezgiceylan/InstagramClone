@@ -3,6 +3,7 @@ import {Image, SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import styles from './AccountComponents.style';
+
 const Bio = ({route}) => {
   const navigation = useNavigation();
 

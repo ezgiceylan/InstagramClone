@@ -10,7 +10,6 @@ import Container from '../../components/Container/Container';
 import styles from './Post.styles';
 
 const SinglePost = ({navigation}) => {
-  const [like, setLike] = useState(false);
   return (
     <Container insets={{top: true, bottom: true}}>
       <View>
