@@ -1,6 +1,6 @@
 
-![Logo](https://i.pinimg.com/originals/97/4e/fa/974efa9d940187be60a70c2359dcd6d0.webp)
 
+<img src="https://i.pinimg.com/originals/97/4e/fa/974efa9d940187be60a70c2359dcd6d0.webp"  width="800"/>
 
 # Instagram-Clone
 
@@ -13,13 +13,14 @@ An instagram clone developed with react-native.
   <img src="https://github.com/ezgiceylan/InstagramClone/blob/main/assets/screenshot/Login.png?raw=true" width="200" />
   <img src="https://github.com/ezgiceylan/InstagramClone/blob/main/assets/screenshot/Account.png?raw=true" width="200" /> 
   <img src="https://github.com/ezgiceylan/InstagramClone/blob/main/assets/screenshot/Home.png?raw=true" width="200" />
+  <img src="https://github.com/ezgiceylan/InstagramClone/blob/main/assets/screenshot/Reels.png?raw=true" width="200" />
 </p>
  
+ <p float="left">
+   
+ </p>
 
 ## Install
-
-
-
 
 ```bash
 npm install
